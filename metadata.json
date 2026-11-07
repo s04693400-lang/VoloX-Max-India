@@ -1,0 +1,6 @@
+{
+  "name": "Free Fire: Battleground Survivor 3D",
+  "description": "VoloX Max India: Professional 3D real-time multiplayer battle royale without AI bots. Supports mobile and PC with standing, running, crouching, prone stances, and tactical gloo walls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

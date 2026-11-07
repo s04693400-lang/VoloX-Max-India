@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b0e14;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+.font-teko {
+  font-family: 'Teko', sans-serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Red hit flash effect on screen */
+@keyframes red-vignette {
+  0% { opacity: 0.8; }
+  100% { opacity: 0; }
+}
+
+.hit-flash {
+  animation: red-vignette 0.25s ease-out forwards;
+}
+
+/* Zone warning pulse */
+@keyframes zone-electric {
+  0%, 100% { box-shadow: inset 0 0 40px rgba(56, 189, 248, 0.4); }
+  50% { box-shadow: inset 0 0 80px rgba(59, 130, 246, 0.7); }
+}
+
+.zone-danger-border {
+  animation: zone-electric 1.5s infinite ease-in-out;
+}
